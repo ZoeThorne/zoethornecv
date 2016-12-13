@@ -40,7 +40,7 @@ html {
 }
 
 .intro-text {
-  background-color: #e3e0cf;
+  background-color: #FFF8DC;
   padding: 10px;
   text-align: justify;
   border: 3px solid black;
@@ -74,24 +74,86 @@ html {
 
 .projects-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
     background: #9fa8a3;
 }
 
+.carousel-inner {
+  height: 400px;
+}
+
+.project-gallery-img {
+  height: 50%;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.carousel-caption {
+  background-color: #3b3a36;
+  opacity: 0.8;
+}
+
+.carousel-caption a {
+  color: white;
+}
+
 .skills-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #c0dfd9;
 }
 
+.skill-item {
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #F0FFFF;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.skill-details {
+  visibility: hidden;
+  text-align: left;
+  opacity: 0; 
+  height: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  overflow: hidden;
+
+}
+
+.skill-item:hover .skill-details {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
 .contact-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #3b3a36;
     color: white;
+}
+
+.contact-table {
+  margin-left: 33%;
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+  background: white;
+}
+
+.contact-content {
+  padding: 10px;
+  color: black;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
 }
 
 /* Scrolling Arrows */
